@@ -1,0 +1,17 @@
+
+> workspace@0.0.0 dev:web C:\Users\varun\Downloads\skillfit-gov7-20260505-235332
+> pnpm --filter @workspace/skillfit dev
+
+
+> @workspace/skillfit@0.0.0 dev C:\Users\varun\Downloads\skillfit-gov7-20260505-235332\artifacts\skillfit
+> vite --config vite.config.ts --host 0.0.0.0
+
+
+  [32m[1mVITE[22m v7.3.2[39m  [2mready in [0m[1m737[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.16.135.132:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.27.224.1:[1m5173[22m/[39m
+[2m3:45:32 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/interview.tsx, /src/index.css[22m
+[2m3:47:33 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/interview.tsx, /src/index.css[22m
+[2m3:48:07 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/interview.tsx, /src/index.css[22m
