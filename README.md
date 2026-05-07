@@ -101,6 +101,12 @@ pnpm db:push
 ```bash
 pnpm --filter @workspace/api-server run seed:admin
 ```
+If you get a message like this:
+```bash
+ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/api-server@0.0.0 seed:admin: `tsx scripts/seed-admin.ts`
+Exit status 1
+```
+Ignore it.
 
 Default credentials: `admin` / `admin123` (change in production)
 
