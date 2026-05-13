@@ -4,9 +4,15 @@
 export interface InterviewState {
   candidateId: number | null;
   candidateName: string;
-  language: "kn" | "hi" | "en";
+  aadhaarNumber: string;
+  language: "kn" | "en";
   trade: string;
   district: string;
+  phone: string;
+  profilePhoto: string;
+  skills: string;
+  workHistory: string;
+  contacts: string;
   interviewId: number | null;
   classification: string | null;
   avgScore: number | null;
@@ -22,9 +28,15 @@ export function getState(): InterviewState {
   return {
     candidateId: null,
     candidateName: "",
+    aadhaarNumber: "",
     language: "kn",
     trade: "",
     district: "",
+    phone: "",
+    profilePhoto: "",
+    skills: "",
+    workHistory: "",
+    contacts: "",
     interviewId: null,
     classification: null,
     avgScore: null,

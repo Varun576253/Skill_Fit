@@ -9,7 +9,7 @@ import {
 import type { OfficerActionBodyAction } from "@workspace/api-client-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
-import { CLASSIFICATION_LABELS, LANG_LABELS } from "@/lib/constants";
+import { CLASSIFICATION_LABELS, KARNATAKA_DISTRICTS, LANG_LABELS, TRADES } from "@/lib/constants";
 
 const ACTIONS = [
   { key: "shortlist", label: "Shortlist", color: "bg-green-600 hover:bg-green-700" },
@@ -26,6 +26,8 @@ export default function CandidateDetail() {
   const [notes, setNotes] = useState("");
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const [actionSuccess, setActionSuccess] = useState<string | null>(null);
+  const [isEditingProfile, setIsEditingProfile] = useState(false);
+  const [profile, setProfile] = useState({ name: "", phone: "", district: "", trade: "", language: "kn" });
 
   const { data: candidate, isLoading } = useGetCandidate(id, {
     query: { queryKey: getGetCandidateQueryKey(id) },
@@ -34,6 +36,19 @@ export default function CandidateDetail() {
     query: { queryKey: getGetCandidateActionsQueryKey(id) },
   });
   const actionMutation = useCreateOfficerAction();
+
+  async function saveProfile() {
+    const apiBase = import.meta.env.VITE_API_BASE_URL ?? "";
+    const res = await fetch(`${apiBase}/api/candidates/${id}`, {
+      method: "PATCH",
+      credentials: "include",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(profile),
+    });
+    if (!res.ok) return;
+    setIsEditingProfile(false);
+    await queryClient.invalidateQueries({ queryKey: getGetCandidateQueryKey(id) });
+  }
 
   async function doAction(action: OfficerActionBodyAction) {
     try {
@@ -71,6 +86,13 @@ export default function CandidateDetail() {
   }
 
   const cls = candidate.classification ? CLASSIFICATION_LABELS[candidate.classification.category] : null;
+  const profileValue = isEditingProfile ? profile : {
+    name: candidate.name,
+    phone: candidate.phone,
+    district: candidate.district,
+    trade: candidate.trade,
+    language: candidate.language,
+  };
 
   return (
     <div className="p-6 max-w-4xl">
@@ -103,6 +125,68 @@ export default function CandidateDetail() {
           <span className={`px-3 py-1.5 rounded-full text-sm font-semibold border ${cls.bg} ${cls.color}`}>
             {cls.label}
           </span>
+        )}
+      </div>
+
+      <div className="mb-6 rounded-xl border border-card-border bg-card p-5 shadow-sm">
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 className="text-sm font-semibold text-foreground">Candidate Profile</h2>
+            <p className="text-xs text-muted-foreground">Officer can correct Aadhaar/demo profile fields like a resume header.</p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => navigate(`/admin/candidates/${id}/chat`)}
+              className="rounded-lg border border-primary px-3 py-2 text-xs font-semibold text-primary hover:bg-primary/5"
+            >
+              Open candidate chat
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                if (!isEditingProfile) setProfile(profileValue);
+                setIsEditingProfile((value) => !value);
+              }}
+              className="rounded-lg bg-primary px-3 py-2 text-xs font-semibold text-white hover:bg-primary/90"
+            >
+              {isEditingProfile ? "Cancel" : "Edit profile"}
+            </button>
+          </div>
+        </div>
+        {isEditingProfile ? (
+          <div className="grid gap-3 sm:grid-cols-2">
+            <input className="rounded-lg border border-input bg-background px-3 py-2 text-sm" value={profile.name} onChange={(e) => setProfile({ ...profile, name: e.target.value })} />
+            <input className="rounded-lg border border-input bg-background px-3 py-2 text-sm" value={profile.phone} onChange={(e) => setProfile({ ...profile, phone: e.target.value })} />
+            <select className="rounded-lg border border-input bg-background px-3 py-2 text-sm" value={profile.district} onChange={(e) => setProfile({ ...profile, district: e.target.value })}>
+              {KARNATAKA_DISTRICTS.map((d) => <option key={d} value={d}>{d}</option>)}
+            </select>
+            <select className="rounded-lg border border-input bg-background px-3 py-2 text-sm" value={profile.trade} onChange={(e) => setProfile({ ...profile, trade: e.target.value })}>
+              {TRADES.map((t) => <option key={t} value={t}>{t}</option>)}
+            </select>
+            <select className="rounded-lg border border-input bg-background px-3 py-2 text-sm" value={profile.language} onChange={(e) => setProfile({ ...profile, language: e.target.value })}>
+              <option value="kn">Kannada</option>
+              <option value="en">English</option>
+            </select>
+            <button type="button" onClick={saveProfile} className="rounded-lg bg-green-600 px-3 py-2 text-sm font-semibold text-white hover:bg-green-700">
+              Save profile
+            </button>
+          </div>
+        ) : (
+          <div className="grid gap-3 sm:grid-cols-5">
+            {[
+              ["Name", candidate.name],
+              ["Phone", candidate.phone],
+              ["District", candidate.district],
+              ["Role", candidate.trade],
+              ["Language", LANG_LABELS[candidate.language] || candidate.language],
+            ].map(([label, value]) => (
+              <div key={label} className="rounded-lg bg-muted p-3">
+                <p className="text-xs text-muted-foreground">{label}</p>
+                <p className="mt-1 text-sm font-semibold text-foreground">{value}</p>
+              </div>
+            ))}
+          </div>
         )}
       </div>
 

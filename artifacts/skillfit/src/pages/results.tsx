@@ -37,7 +37,7 @@ export default function Results() {
             </div>
             <h1 className="text-2xl font-bold text-white mb-1">{textMap.heading}</h1>
             <p className="text-sm text-white/80">
-              {lang === "kn" ? "ಮೌಲ್ಯಮಾಪನ ಪೂರ್ಣವಾಗಿದೆ" : lang === "hi" ? "मूल्यांकन पूर्ण हुआ" : "Assessment Complete"}
+              {lang === "kn" ? "ಮೌಲ್ಯಮಾಪನ ಪೂರ್ಣವಾಗಿದೆ" : "Assessment Complete"}
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export default function Results() {
               <div className="mb-4">
                 <div className="flex items-center justify-between mb-1.5">
                   <span className="text-xs text-muted-foreground">
-                    {lang === "kn" ? "ಒಟ್ಟಾರೆ ಅಂಕ" : lang === "hi" ? "कुल अंक" : "Overall Score"}
+                    {lang === "kn" ? "ಒಟ್ಟಾರೆ ಅಂಕ" : "Overall Score"}
                   </span>
                   <span className="text-sm font-bold text-foreground">{avgScore.toFixed(1)} / 10</span>
                 </div>
@@ -72,19 +72,19 @@ export default function Results() {
             <div className="bg-muted rounded-lg p-3 space-y-1">
               <div className="flex justify-between text-xs">
                 <span className="text-muted-foreground">
-                  {lang === "kn" ? "ಹೆಸರು" : lang === "hi" ? "नाम" : "Name"}
+                  {lang === "kn" ? "ಹೆಸರು" : "Name"}
                 </span>
                 <span className="font-medium text-foreground">{state.candidateName}</span>
               </div>
               <div className="flex justify-between text-xs">
                 <span className="text-muted-foreground">
-                  {lang === "kn" ? "ವೃತ್ತಿ" : lang === "hi" ? "व्यवसाय" : "Trade"}
+                  {lang === "kn" ? "ವೃತ್ತಿ" : "Trade"}
                 </span>
                 <span className="font-medium text-foreground">{state.trade}</span>
               </div>
               <div className="flex justify-between text-xs">
                 <span className="text-muted-foreground">
-                  {lang === "kn" ? "ಜಿಲ್ಲೆ" : lang === "hi" ? "जिला" : "District"}
+                  {lang === "kn" ? "ಜಿಲ್ಲೆ" : "District"}
                 </span>
                 <span className="font-medium text-foreground">{state.district}</span>
               </div>
@@ -97,8 +97,6 @@ export default function Results() {
           <p className="text-xs text-muted-foreground leading-relaxed">
             {lang === "kn"
               ? "ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು ಸಂಬಂಧಿತ ಅಧಿಕಾರಿಗಳು ಪರಿಶೀಲಿಸುತ್ತಾರೆ. ಯಾವುದೇ ಸಂದರ್ಭದಲ್ಲೂ ಅರ್ಜಿ ತಿರಸ್ಕರಿಸಲ್ಪಡುವುದಿಲ್ಲ."
-              : lang === "hi"
-              ? "आपकी जानकारी अधिकारियों द्वारा समीक्षा की जाएगी। किसी भी परिस्थिति में आवेदन सीधे अस्वीकार नहीं किया जाएगा।"
               : "Your information will be reviewed by government officers. No application is ever automatically rejected."}
           </p>
         </div>
@@ -108,7 +106,7 @@ export default function Results() {
           onClick={handleDone}
           className="w-full bg-primary text-white font-semibold py-4 rounded-xl text-base hover:bg-primary/90 transition-colors shadow-sm"
         >
-          {lang === "kn" ? "ಮುಗಿಸಿ" : lang === "hi" ? "समाप्त" : "Done"}
+          {lang === "kn" ? "ಮುಗಿಸಿ" : "Done"}
         </button>
       </div>
     </div>

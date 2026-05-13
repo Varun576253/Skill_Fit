@@ -4,12 +4,14 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Landing from "@/pages/landing";
 import Register from "@/pages/register";
+import Profile from "@/pages/profile";
 import Interview from "@/pages/interview";
 import Results from "@/pages/results";
 import AdminLogin from "@/pages/admin/login";
 import AdminDashboard from "@/pages/admin/dashboard";
 import AdminCandidates from "@/pages/admin/candidates";
 import CandidateDetail from "@/pages/admin/candidate-detail";
+import CandidateChat from "@/pages/admin/candidate-chat";
 import { AdminLayout } from "@/components/admin-layout";
 import NotFound from "@/pages/not-found";
 import { useGetAdminMe, getGetAdminMeQueryKey } from "@workspace/api-client-react";
@@ -51,7 +53,9 @@ function Router() {
     <Switch>
       {/* Candidate PWA */}
       <Route path="/" component={Landing} />
-      <Route path="/register" component={Register} />
+      <Route path="/register">{() => <Register />}</Route>
+      <Route path="/login">{() => <Register mode="login" />}</Route>
+      <Route path="/profile" component={Profile} />
       <Route path="/interview" component={Interview} />
       <Route path="/results" component={Results} />
 
@@ -75,6 +79,13 @@ function Router() {
         {() => (
           <AdminGuard>
             <CandidateDetail />
+          </AdminGuard>
+        )}
+      </Route>
+      <Route path="/admin/candidates/:id/chat">
+        {() => (
+          <AdminGuard>
+            <CandidateChat />
           </AdminGuard>
         )}
       </Route>
