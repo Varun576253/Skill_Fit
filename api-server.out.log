@@ -28,3 +28,738 @@
 [00:38:51.199] [32mINFO[39m (11452): [36mWorker loaded: face-processing[39m
 [00:38:51.202] [32mINFO[39m (11452): [36mAI SkillFit API listening on port 3000[39m
 [00:38:51.202] [32mINFO[39m (11452): [36mHealth: http://localhost:3000/api/healthz[39m
+[00:44:09.648] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/candidates"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[00:44:12.646] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mres[39m: {
+      "statusCode": 201
+    }
+    [35mresponseTime[39m: 3001
+[00:44:12.657] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 2,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/interviews"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[00:44:12.909] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 2,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mres[39m: {
+      "statusCode": 201
+    }
+    [35mresponseTime[39m: 255
+[00:44:13.245] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 3,
+      "method": "GET",
+      "url": "/api/interviews/99/questions"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/interviews/99/questions?next=true"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[00:44:15.685] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 3,
+      "method": "GET",
+      "url": "/api/interviews/99/questions"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2440
+[00:46:37.367] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 4,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/candidates"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[00:46:39.191] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 4,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mres[39m: {
+      "statusCode": 201
+    }
+    [35mresponseTime[39m: 1824
+[00:46:39.199] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 5,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/interviews"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[00:46:39.428] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 5,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mres[39m: {
+      "statusCode": 201
+    }
+    [35mresponseTime[39m: 229
+[00:46:39.765] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 6,
+      "method": "GET",
+      "url": "/api/interviews/100/questions"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/interviews/100/questions?next=true"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[00:46:42.067] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 6,
+      "method": "GET",
+      "url": "/api/interviews/100/questions"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2302
+[01:20:15.443] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 7,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/candidates"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:20:21.770] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 7,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mres[39m: {
+      "statusCode": 409
+    }
+    [35mresponseTime[39m: 6327
+[01:20:39.636] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 8,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/candidates"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:20:41.304] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 8,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mres[39m: {
+      "statusCode": 409
+    }
+    [35mresponseTime[39m: 1668
+[01:20:54.839] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 9,
+      "method": "POST",
+      "url": "/api/admin/login"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/admin/login"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:20:58.035] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 9,
+      "method": "POST",
+      "url": "/api/admin/login"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 3196
+[01:20:59.226] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 10,
+      "method": "GET",
+      "url": "/api/admin/me"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/admin/me"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:20:59.230] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 10,
+      "method": "GET",
+      "url": "/api/admin/me"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 4
+[01:20:59.569] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 11,
+      "method": "GET",
+      "url": "/api/stats/dashboard"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/dashboard"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:20:59.609] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 12,
+      "method": "GET",
+      "url": "/api/stats/by-trade"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/by-trade"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:20:59.610] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 13,
+      "method": "GET",
+      "url": "/api/stats/by-district"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/by-district"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:20:59.650] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 14,
+      "method": "GET",
+      "url": "/api/stats/recent-activity"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/recent-activity?limit=8"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:20:59.657] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 15,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/review-queue?limit=10"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:21:00.518] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 11,
+      "method": "GET",
+      "url": "/api/stats/dashboard"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 949
+[01:21:01.216] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 12,
+      "method": "GET",
+      "url": "/api/stats/by-trade"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1607
+[01:21:01.221] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 15,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1564
+[01:21:01.261] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 13,
+      "method": "GET",
+      "url": "/api/stats/by-district"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1651
+[01:21:01.350] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 14,
+      "method": "GET",
+      "url": "/api/stats/recent-activity"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1700
+[01:21:06.449] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 16,
+      "method": "GET",
+      "url": "/api/candidates"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/candidates?page=1&limit=20"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:21:07.187] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 16,
+      "method": "GET",
+      "url": "/api/candidates"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 738
+[01:21:09.415] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 17,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/review-queue?limit=10"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:21:09.659] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 17,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 244
+[01:21:13.480] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 18,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/review-queue?limit=10"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:21:13.734] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 18,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 254
+[01:21:44.733] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 19,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/candidates"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:21:46.620] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 19,
+      "method": "POST",
+      "url": "/api/candidates"
+    }
+    [35mres[39m: {
+      "statusCode": 201
+    }
+    [35mresponseTime[39m: 1887
+[01:21:46.625] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 20,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/interviews"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:21:46.869] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 20,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mres[39m: {
+      "statusCode": 201
+    }
+    [35mresponseTime[39m: 244
+[01:21:47.203] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 21,
+      "method": "GET",
+      "url": "/api/interviews/101/questions"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/interviews/101/questions?next=true"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:21:48.487] [33mWARN[39m (11452): [36mGemini model failed; trying fallback model[39m
+    [35mfailedModel[39m: "gemini-2.5-flash-lite"
+    [35mnextModel[39m: "gemini-flash-lite-latest"
+    [35mstatus[39m: 429
+[01:21:57.378] [33mWARN[39m (11452): [36mGemini fallback model used successfully[39m
+    [35mmodel[39m: "gemini-flash-lite-latest"
+    [35mprimaryModel[39m: "gemini-2.5-flash-lite"
+[01:21:57.617] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 21,
+      "method": "GET",
+      "url": "/api/interviews/101/questions"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 10414
+[01:22:16.717] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 22,
+      "method": "POST",
+      "url": "/api/admin/login"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/admin/login"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:19.453] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 22,
+      "method": "POST",
+      "url": "/api/admin/login"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2736
+[01:22:19.477] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 23,
+      "method": "GET",
+      "url": "/api/stats/dashboard"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/dashboard"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:19.788] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 24,
+      "method": "GET",
+      "url": "/api/stats/by-trade"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/by-trade"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:19.822] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 25,
+      "method": "GET",
+      "url": "/api/stats/by-district"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/by-district"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:19.825] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 26,
+      "method": "GET",
+      "url": "/api/stats/recent-activity"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/recent-activity?limit=8"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:19.826] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 27,
+      "method": "GET",
+      "url": "/api/admin/me"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/admin/me"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:19.843] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 28,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/review-queue?limit=10"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:19.856] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 27,
+      "method": "GET",
+      "url": "/api/admin/me"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 30
+[01:22:20.368] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 23,
+      "method": "GET",
+      "url": "/api/stats/dashboard"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 891
+[01:22:21.438] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 24,
+      "method": "GET",
+      "url": "/api/stats/by-trade"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1650
+[01:22:21.455] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 25,
+      "method": "GET",
+      "url": "/api/stats/by-district"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 1633
+[01:22:21.488] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 26,
+      "method": "GET",
+      "url": "/api/stats/recent-activity"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1663
+[01:22:21.506] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 28,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 1663
+[01:22:22.734] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 29,
+      "method": "GET",
+      "url": "/api/candidates"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/candidates?page=1&limit=20"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:23.201] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 29,
+      "method": "GET",
+      "url": "/api/candidates"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 465
+[01:22:23.825] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 30,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/stats/review-queue?limit=10"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:22:24.057] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 30,
+      "method": "GET",
+      "url": "/api/stats/review-queue"
+    }
+    [35mres[39m: {
+      "statusCode": 304
+    }
+    [35mresponseTime[39m: 232
+[01:23:08.136] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 31,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/interviews"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:23:09.797] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 31,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mres[39m: {
+      "statusCode": 201
+    }
+    [35mresponseTime[39m: 1661
+[01:23:09.827] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 32,
+      "method": "GET",
+      "url": "/api/interviews/102/questions"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/interviews/102/questions?next=true"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:23:11.076] [33mWARN[39m (11452): [36mGemini model failed; trying fallback model[39m
+    [35mfailedModel[39m: "gemini-2.5-flash-lite"
+    [35mnextModel[39m: "gemini-flash-lite-latest"
+    [35mstatus[39m: 429
+[01:23:25.988] [33mWARN[39m (11452): [36mGemini fallback model used successfully[39m
+    [35mmodel[39m: "gemini-flash-lite-latest"
+    [35mprimaryModel[39m: "gemini-2.5-flash-lite"
+[01:23:27.666] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 32,
+      "method": "GET",
+      "url": "/api/interviews/102/questions"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 17839
+[01:23:40.052] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 33,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mmethod[39m: "POST"
+    [35murl[39m: "/api/interviews"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:23:41.686] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 33,
+      "method": "POST",
+      "url": "/api/interviews"
+    }
+    [35mres[39m: {
+      "statusCode": 201
+    }
+    [35mresponseTime[39m: 1635
+[01:23:41.723] [32mINFO[39m (11452):
+    [35mreq[39m: {
+      "id": 34,
+      "method": "GET",
+      "url": "/api/interviews/103/questions"
+    }
+    [35mmethod[39m: "GET"
+    [35murl[39m: "/api/interviews/103/questions?next=true"
+    [35mip[39m: "::1"
+    [35muserAgent[39m: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0"
+    [35mbody[39m: {}
+[01:23:42.616] [33mWARN[39m (11452): [36mGemini model failed; trying fallback model[39m
+    [35mfailedModel[39m: "gemini-2.5-flash-lite"
+    [35mnextModel[39m: "gemini-flash-lite-latest"
+    [35mstatus[39m: 429
+[01:24:30.831] [33mWARN[39m (11452): [36mGemini fallback model used successfully[39m
+    [35mmodel[39m: "gemini-flash-lite-latest"
+    [35mprimaryModel[39m: "gemini-2.5-flash-lite"
+[01:24:32.412] [32mINFO[39m (11452): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 34,
+      "method": "GET",
+      "url": "/api/interviews/103/questions"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 50689
