@@ -415,39 +415,4 @@ router.get("/candidates/:id", requireAdmin, async (req, res) => {
   });
 });
 
-// PATCH /api/candidates/:id
-router.patch("/candidates/:id", requireAdmin, async (req, res) => {
-  const idParam = req.params["id"];
-  const id = parseInt(Array.isArray(idParam) ? idParam[0] : idParam, 10);
-  if (isNaN(id)) { res.status(400).json({ error: "Invalid id" }); return; }
-
-  const schema = z.object({
-    name: z.string().min(1).optional(),
-    phone: z.string().min(10).max(20).optional(),
-    district: z.string().min(1).optional(),
-    trade: z.string().min(1).optional(),
-    language: z.enum(["kn", "en"]).optional(),
-  });
-
-  const parsed = schema.safeParse(req.body);
-  if (!parsed.success) {
-    res.status(400).json({ error: "Invalid input", details: parsed.error.issues });
-    return;
-  }
-
-  const values = {
-    ...parsed.data,
-    ...(parsed.data.phone ? { phone: parsed.data.phone.replace(/\D/g, "") } : {}),
-  };
-
-  const [candidate] = await db
-    .update(candidatesTable)
-    .set(values)
-    .where(eq(candidatesTable.id, id))
-    .returning();
-
-  if (!candidate) { res.status(404).json({ error: "Candidate not found" }); return; }
-  res.json(candidate);
-});
-
 export default router;

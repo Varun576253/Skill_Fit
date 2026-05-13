@@ -1,4 +1,0 @@
-
-> @workspace/skillfit@0.0.0 dev C:\Users\Ch.Sricharan Reddy\Downloads\Skill_Fit\Skill_Fit\artifacts\skillfit
-> vite --config vite.config.ts --host 0.0.0.0 "--" "--port" "5174"
-

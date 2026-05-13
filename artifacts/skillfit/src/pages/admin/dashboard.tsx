@@ -1,7 +1,7 @@
 import { useGetDashboardStats, useGetStatsByTrade, useGetStatsByDistrict, useGetRecentActivity } from "@workspace/api-client-react";
 import { useLocation } from "wouter";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from "recharts";
-import { AI_FEATURES, CLASSIFICATION_LABELS, GOVT_HIRING_TRACKS } from "@/lib/constants";
+import { CLASSIFICATION_LABELS } from "@/lib/constants";
 import { useState, useEffect } from "react";
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -81,22 +81,7 @@ export default function AdminDashboard() {
     <div className="p-6 space-y-6">
       <div>
         <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
-        <p className="text-muted-foreground text-sm mt-0.5">AI for Bharat: Kannada-first Karnataka workforce assessment</p>
-      </div>
-
-      <div className="grid gap-4 lg:grid-cols-[1fr_1fr]">
-        {GOVT_HIRING_TRACKS.map((track) => (
-          <div key={track.id} className="rounded-xl border border-card-border bg-card p-4 shadow-sm">
-            <p className="text-sm font-semibold text-foreground">{track.title}</p>
-            <p className="mt-1 text-xs text-muted-foreground">{track.period}</p>
-            <p className="mt-2 text-xs text-foreground/80">{track.aiUse}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="rounded-xl border border-primary/20 bg-primary/5 p-4">
-        <p className="text-xs font-semibold uppercase tracking-normal text-primary">AI coverage beyond Gemini API</p>
-        <p className="mt-2 text-sm text-foreground">{AI_FEATURES.join(" • ")}</p>
+        <p className="text-muted-foreground text-sm mt-0.5">Karnataka Workforce Assessment Overview</p>
       </div>
 
       {/* Stats grid */}
